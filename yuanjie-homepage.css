@@ -1,0 +1,190 @@
+
+/* --------------------------------------------------
+ * Sticky footer styles
+ * ----------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+dl {
+    font-size: 14pt;
+}
+
+p {
+    font-size: 14pt;
+}
+
+.navbar .nav > li > a, .navbar .nav > li > a:first-letter,
+.navbar .nav > li.current-menu-item > a, 
+.navbar .nav > li.current-menu-ancestor > a {                    
+font-size:      14pt;
+}
+
+.navbar-brand
+{
+  font-size:      14pt;
+  background-color: #f5f5f5;
+}
+
+.container {
+	background-color: white;
+}
+.container3 {
+}
+
+.info {
+    font-size: 14px;
+}
+
+.author {
+    font-size: 15px;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/wall.jpg');
+}
+a.button:visited
+{
+    color:inherit;
+}
+.button
+{
+    padding: 6px 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+.conf
+{
+    color:inherit;
+    text-decoration:none;
+}
+.conf:visited
+{
+    color:inherit;
+    text-decoration:none;
+}
+.conf:hover
+{
+    color:inherit;
+    text-decoration:none;
+}
+
+.confname
+{
+    color:inherit;
+}
+.confname:visited
+{
+    color:inherit;
+    text-decoration:none;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+    padding: 60px 15px 0;
+}
+body > .container3 {
+    padding: 60px 15px 0;
+}
+.container .text-muted {
+    margin: 20px 0;
+}
+.container3 .text-muted {
+    margin: 20px 0;
+}
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.footer > .container3 {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+code {
+    font-size: 80%;
+}
+
+.starter-template {
+    padding: 40px 15px;
+    /*text-align: center;*/
+}
+
+.container2 {
+	position: relative;	
+	height: 220px;
+	width: 220px;
+	overflow: hidden;
+}
+.image {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.points {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+}
+.point {
+	height: 10px;
+	width: 10px;
+	margin: 10px;
+	border-radius: 50%;
+	background-color: grey;
+	transition: background-color 0.3s ease-in-out;
+	cursor: pointer;
+}
+.point.active {
+	background-color: white;
+}
+.icon-wrapper {
+	margin-top: 20px;
+}
+strong {
+  font-family: Merriweather; /* 'Lato', Verdana, Helvetica, sans-serif; */
+  font-size: 14px;
+}
+heading {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.0;
+}
+year {
+  font-family: Merriweather; /* 'Lato', Verdana, Helvetica, sans-serif; */
+  font-size: 20px;
+  color: #0000FF;  
+}
+brief {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 10px;
+}
+}
+
