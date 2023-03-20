@@ -134,41 +134,6 @@ code {
     /*text-align: center;*/
 }
 
-.container2 {
-	position: relative;	
-	height: 220px;
-	width: 220px;
-	overflow: hidden;
-}
-.image {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-}
-.points {
-	position: absolute;
-	top: 10px;
-	left: 0;
-	right: 0;
-	display: flex;
-	justify-content: center;
-}
-.point {
-	height: 10px;
-	width: 10px;
-	margin: 10px;
-	border-radius: 50%;
-	background-color: grey;
-	transition: background-color 0.3s ease-in-out;
-	cursor: pointer;
-}
-.point.active {
-	background-color: white;
-}
-.icon-wrapper {
-	margin-top: 20px;
-}
-
 heading {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 20px;
