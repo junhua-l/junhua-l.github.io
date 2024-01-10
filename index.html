@@ -173,19 +173,21 @@
 				<h4 class="list-group-item-heading"> Fumos: Neural Compression and Progressive Refinement for Continuous Point Cloud Video Streaming.
 					<span class="badge"><a class="conf" target="_blank" href="https://arxiv.org/">VR' 24</a></span>
 				</h4>
-				<p class="author"> <strong><span ismodified="1" class="br_wrap">Junhua Liu*</span></strong>, Zhicheng Liang*, 				 
-			<a href="https://www.andrew.cmu.edu/user/malleshd/"><span ismodified="1" class="br_wrap">Mallesham Dasari</span></a>,      					
-                      <a href="https://mypage.cuhk.edu.cn/academics/wangfangxin/index.html"><span ismodified="1" class="br_wrap">Fangxin Wang</span></a><br>
-				IEEE VR (Oral), 2024 (To appear); <strong>- Also selected to appear in TVCG special issue.</strong> <font color="red"><strong><span ismodified="1" class="br_wrap"></span></strong>
-				</p>
+				<p class="author"> <strong>Junhua Liu*<</strong>, Zhicheng Liang*, 				 
+			<a href="https://www.andrew.cmu.edu/user/malleshd/">Mallesham Dasari</a>, <a href="https://mypage.cuhk.edu.cn/academics/wangfangxin/index.html">Fangxin Wang</a><br>
+				IEEE VR (Oral), 2024 (To appear); <strong>- Also selected to appear in TVCG special issue.</strong> <font color="red">
 				<button type="button" class="btn btn-success btn-xs" data-target="#fumos-abs" data-toggle="collapse">Abstract</button>
 				<button type="button" class="btn btn-info btn-xs" data-target="#fumos-bib" data-toggle="collapse">Bib</button>
 				<button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://drive.google.com/file/d/1VZTS4tVDBvk9Y25M69MxVIRUHtqj6KWx/view?usp=sharing">Preprint</a></button>
+				 </p>		
+				
 				<div id="fumos-abs" class="collapse">
-					<p class="info" align="justify">
+				    <p class="info" align="justify">
 					Point cloud video (PCV) offers watching experiences in photorealistic 3D scenes with six-degree-of-freedom (6-DoF), enabling a variety of VR and AR applications. The user's Field of View (FoV) is more fickle with 6-DoF movement than 3-DoF movement in 360-degree video. PCV streaming is extremely bandwidth-intensive. However, current streaming systems still need hundreds of Mbps bandwidth to transmit, exceeding the bandwidth capabilities of commodity devices. To save bandwidth, FoV-adaptive streaming predicts a user's FoV and only downloads point cloud data falling in the predicted FoV. But it is difficult to accurately predict the users FoV even 2-3 seconds before playback due to 6-DoF. Misprediction of FoV or network bandwidth dips results in frequent stalls. To avoid rebuffering, existing systems would cause incomplete FoV and degraded experience, which deteriorates the user's quality of experience (QoE). In this paper, we describe Fumos, a novel system that preserves interactive experience by avoiding playback stalls while maintaining high perceptual quality and high compression rate. We find a research gap in inter-frame redundant utilization and progressive mechaism. Fumos has three crucial designs, including (1) Neural compression framework with inter-frame coding, namely N-PCC, which achieves both bandwidth efficiency and high fidelity. (2) Progressive refinement streaming framework that enables continuous playback by incrementally upgrading a fetched portion to a higher quality (3) System-level adaptation that employs Lyapunov optimization to jointly optimize the long-term user QoE. Experimental results demonstrate that Fumos significantly outperforms Draco, achieving an average decoding rate acceleration of over 260×. Moreover, the proposed compression framework N-PCC attains remarkable BD-Rate gains, averaging 91.7% and 51.7% against the state-of-the-art point cloud compression methods G-PCC and V-PCC, respectively. </p>
 			 </div>
-			 <div id="icccn18-bib" class="collapse">
+			 <div id="fumos-bib" class="collapse">
+                           <p class="info" align="justify">
+                           </p>				 
 			</div>
 		</td></tr>
 
