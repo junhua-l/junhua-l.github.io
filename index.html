@@ -147,7 +147,7 @@
 
 
 			<tr><td>
-				<h4 class="list-group-item-heading"> Boosting Mobile Volumetric Video Streaming through Neural-based 3D Representation
+				<h4 class="list-group-item-heading"> Undisclosed Mobile Streaming through Neural-based 3D Representation Paper
 					<span class="badge"><a class="conf" target="_blank" href="https://arxiv.org/">Arxiv 24</a></span>
 				</h4>
 				<p class="author">
@@ -158,7 +158,7 @@
 				In submission to Mobisys 2024. </td></tr>						
 						
 			<tr><td>
-				<h4 class="list-group-item-heading"> Neural-enhanced 3D Video Conferencing
+				<h4 class="list-group-item-heading"> Undisclosed Neural-enhanced 3D Video Conferencing Paper
 					<span class="badge"><a class="conf" target="_blank" href="https://arxiv.org/">Arxiv 24</a></span>
 				</h4>
 				<p class="author">
@@ -178,10 +178,14 @@
                       <a href="https://mypage.cuhk.edu.cn/academics/wangfangxin/index.html"><span ismodified="1" class="br_wrap">Fangxin Wang</span></a><br>
 				IEEE VR (Oral), 2024 (To appear); <strong>- Also selected to appear in TVCG special issue.</strong> <font color="red"><strong><span ismodified="1" class="br_wrap"></span></strong>
 				</p>
-				<button type="button" class="btn btn-success btn-xs" data-target="#icccn18-abs" data-toggle="collapse">Abstract</button>
-				<button type="button" class="btn btn-info btn-xs" data-target="#icccn18-bib" data-toggle="collapse">Bib</button>
-				<div id="icccn18-abs" class="collapse">
+				<button type="button" class="btn btn-success btn-xs" data-target="#fumos-abs" data-toggle="collapse">Abstract</button>
+				<button type="button" class="btn btn-info btn-xs" data-target="#fumos-bib" data-toggle="collapse">Bib</button>
+				<button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://drive.google.com/file/d/1VZTS4tVDBvk9Y25M69MxVIRUHtqj6KWx/view?usp=sharing">Preprint</a></button>
+				<div id="fumos-abs" class="collapse">
 					<p class="info" align="justify">
+					Point cloud video (PCV) offers watching experiences in photorealistic 3D scenes with six-degree-of-freedom (6-DoF), enabling a variety of VR and AR applications. The user's Field of View (FoV) is more fickle with 6-DoF movement than 3-DoF movement in 360-degree video. PCV streaming is extremely bandwidth-intensive. However, current streaming systems still need hundreds of Mbps bandwidth to transmit, exceeding the bandwidth capabilities of commodity devices. To save bandwidth, FoV-adaptive streaming predicts a user's FoV and only downloads point cloud data falling in the predicted FoV. But it is difficult to accurately predict the users FoV even 2-3 seconds before playback due to 6-DoF. Misprediction of FoV or network bandwidth dips results in frequent stalls. To avoid rebuffering, existing systems would cause incomplete FoV and degraded experience, which deteriorates the user's quality of experience (QoE).
+
+					In this paper, we describe Fumos, a novel system that preserves interactive experience by avoiding playback stalls while maintaining high perceptual quality and high compression rate. We find a research gap in inter-frame redundant utilization and progressive mechaism. Fumos has three crucial designs, including (1) Neural compression framework with inter-frame coding, namely N-PCC, which achieves both bandwidth efficiency and high fidelity. (2) Progressive refinement streaming framework that enables continuous playback by incrementally upgrading a fetched portion to a higher quality (3) System-level adaptation that employs Lyapunov optimization to jointly optimize the long-term user QoE. Experimental results demonstrate that Fumos significantly outperforms Draco, achieving an average decoding rate acceleration of over 260×. Moreover, the proposed compression framework N-PCC attains remarkable BD-Rate gains, averaging 91.7% and 51.7% against the state-of-the-art point cloud compression methods G-PCC and V-PCC, respectively.
 				 </p>
 			 </div>
 			 <div id="icccn18-bib" class="collapse">
@@ -195,11 +199,14 @@
 				<p class="author"> Kaiyuan Hu, Yongting Chen, Kaiying Han, <strong><span ismodified="1" class="br_wrap">Junhua Liu</span></strong>, Yili Jin, Boyan Li, Fangxin Wang. <br>				
 				IEEE VR (Poster), 2024 (To appear).  Full version is submitted to Transaction on Mobile Computing.
 				</p>
-				<button type="button" class="btn btn-success btn-xs" data-target="#icccn18-abs" data-toggle="collapse">Abstract</button>
-				<button type="button" class="btn btn-info btn-xs" data-target="#icccn18-bib" data-toggle="collapse">Bib</button>
+				<button type="button" class="btn btn-success btn-xs" data-target="#hulk-abs" data-toggle="collapse">Abstract</button>
+				<button type="button" class="btn btn-info btn-xs" data-target="#hulk-bib" data-toggle="collapse">Bib</button>
 				<button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://arxiv.org/pdf/2310.08205.pdf">Arxiv</a></button>
 				<div id="icccn18-abs" class="collapse">
 					<p class="info" align="justify">
+						Volumetric video has emerged as a prominent medium within the realm of eXtended Reality (XR) with the advancements in computer graphics and depth capture hardware. Users can fully immersive themselves in volumetric video with the ability to switch their viewport in six degree-of-freedom (DOF), including three rotational dimensions (yaw, pitch, roll) and three translational dimensions (X, Y, Z). Different from traditional 2D videos that are composed of pixel matrices, volumetric videos employ point clouds, meshes, or voxels to represent a volumetric scene, resulting in significantly larger data sizes. While previous works have successfully achieved volumetric video streaming in video-on-demand scenarios, the live streaming of volumetric video remains an unresolved challenge due to the limited network bandwidth and stringent latency constraints. 
+
+						In this paper, we for the first time propose a holistic live volumetric video streaming system, LiveVV, which achieves multi-view capture, scene segmentation & reuse, adaptive transmission, and rendering. LiveVV contains multiple lightweight volumetric video capture modules that are capable of being deployed without prior preparation. To reduce bandwidth consumption, LiveVV processes static and dynamic volumetric content separately by reusing static data with low disparity and decimating data with low visual saliency. Besides, to deal with network fluctuation, LiveVV integrates a volumetric video adaptive bitrate streaming algorithm (VABR) to enable fluent playback with the maximum quality of experience. Extensive real-world experiment shows that LiveVV can achieve live volumetric video streaming at a frame rate of 24 fps with a latency of less than 350ms.
 				 </p>
 			 </div>
 			 <div id="icccn18-bib" class="collapse">
@@ -217,13 +224,12 @@
                       <a href="https://mypage.cuhk.edu.cn/academics/wangfangxin/index.html"><span ismodified="1" class="br_wrap">Fangxin Wang</span></a><br>
 					ACM Multimedia (MM)<em><span ismodified="1" class="br_wrap"></span></em>, 2023. <font color="red"><strong><span ismodified="1" class="br_wrap"></span></strong>
 				</p>
-				<button type="button" class="btn btn-success btn-xs" data-target="#icccn18-abs" data-toggle="collapse">Abstract</button>
-				<button type="button" class="btn btn-info btn-xs" data-target="#icccn18-bib" data-toggle="collapse">Bib</button>
-				<button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="">PDF</a></button>
-				<button type="button" class="btn btn-danger btn-xs"><a class="conf" target="_blank" href=" ">Slides</a></button>
+				<button type="button" class="btn btn-success btn-xs" data-target="#mm23-abs" data-toggle="collapse">Abstract</button>
+				<button type="button" class="btn btn-info btn-xs" data-target="#mm23-bib" data-toggle="collapse">Bib</button>
+				<button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://dl.acm.org/doi/pdf/10.1145/3581783.3613810">PDF</a></button>
 				<div id="icccn18-abs" class="collapse">
 					<p class="info" align="justify">
-					
+					Volumetric video emerges as a new attractive video paradigm in recent years since it provides an immersive and interactive 3D viewing experience with six degree-of-freedom (DoF). Unlike traditional 2D or panoramic videos, volumetric videos require dense point clouds, voxels, meshes, or huge neural models to depict volumetric scenes, which results in a prohibitively high bandwidth burden for video delivery. Users’ behavior analysis, especially the viewport and gaze analysis, then plays a significant role in prioritizing the content streaming within users’ viewport and degrading the remaining content to maximize user QoE with limited bandwidth. Although understanding user behavior is crucial, to the best of our best knowledge, there are no available 3D volumetric video viewing datasets containing fine-grained user interactivity features, not to mention further analysis and behavior prediction. In this paper, we for the first time release a volumetric video viewing behavior dataset, with a large scale, multiple dimensions, and diverse conditions. We conduct an in-depth analysis to understand user behaviors when viewing volumetric videos. Interesting findings on user viewport, gaze, and motion preference related to different videos and users are revealed. We finally design a transformer-based viewport prediction model that fuses the features of both gaze and motion, which is able to achieve high accuracy at various
 				 </p>
 			 </div>
 			 <div id="icccn18-bib" class="collapse">
@@ -244,17 +250,16 @@
                       <a href="https://scholar.google.com/citations?user=1o_qvR0AAAAJ&hl=en"><span ismodified="1" class="br_wrap">Shuguang Cui</span></a>.<br>
 					IEEE VR (Oral), 2023. Accept rate = 69/612. 
 				</p>
-				<button type="button" class="btn btn-success btn-xs" data-target="#icccn18-abs" data-toggle="collapse">Abstract</button>
+				<button type="button" class="btn btn-success btn-xs" data-target="#cav3-abs" data-toggle="collapse">Abstract</button>
 				<button type="button" class="btn btn-info btn-xs" data-target="#icccn18-bib" data-toggle="collapse">Bib</button>
-				<button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="">PDF</a></button>
+				<button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10108421">PDF</a></button>
 				<button type="button" class="btn btn-danger btn-xs"><a class="conf" target="_blank" href=" ">Slides</a></button>
-				<div id="icccn18-abs" class="collapse">
+				<div id="cav3-abs" class="collapse">
 					<p class="info" align="justify">
-					
-
+					Volumetric video (VV) recently emerges as a new form of video application providing a photorealistic immersive 3D viewing experience with 6 degree-of-freedom (DoF), which empowers many applications such as VR, AR, and Metaverse. A key problem therein is how to stream the enormous size VV through the network with limited bandwidth. Existing works mostly focused on predicting the viewport for a tiling-based adaptive VV streaming, which however only has quite a limited effect on resource saving. We argue that the content repeatability in the viewport can be further leveraged, and for the first time, propose a client-side cache-assisted strategy that aims to buffer the repeatedly appearing VV tiles in the near future so as to reduce the redundant VV content transmission. The key challenges exist in three aspects, including (1) feature extraction and mining in 6 DoF VV context, (2) accurate long-term viewing pattern estimation and (3) optimal caching scheduling with limited capacity. In this paper, we propose CaV3, an integrated cache-assisted viewport adaptive VV streaming framework to address the challenges. CaV3 employs a Long-short term Sequential prediction model (LSTSP) that achieves accurate short-term, mid-term and long-term viewing pattern prediction with a multi-modal fusion model by capturing the viewer's behavior inertia, current attention, and subjective intention. Besides, CaV3 also contains a contextual MAB-based caching adaptation algorithm (CCA) to fully utilize the viewing pattern and solve the optimal caching problem with a proved upper bound regret. Compared to existing VV datasets only containing single or co-located objects, we for the first time collect a comprehensive dataset with sufficient practical unbounded 360° scenes. The extensive evaluation of the dataset confirms the superiority of CaV3, which outperforms the SOTA algorithm by 15.6%-43% in viewport prediction and 13%-40% in system utility.
 				 </p>
 			 </div>
-			 <div id="icccn18-bib" class="collapse">
+			 <div id="cav3-bib" class="collapse">
 			 
 			</div>
 		</td></tr>						
@@ -271,13 +276,12 @@
                       <a href="https://www.andrew.cmu.edu/user/malleshd//"><span ismodified="1" class="br_wrap">Mallesham Dasari</span></a><br>
 					In submission<em><span ismodified="1" class="br_wrap"></span></em>, 2023. (Preprint accessible by Email) <font color="red"><strong><span ismodified="1" class="br_wrap"></span></strong>
 				</p>
-				<button type="button" class="btn btn-success btn-xs" data-target="#icccn18-abs" data-toggle="collapse">Abstract</button>
-				<button type="button" class="btn btn-info btn-xs" data-target="#icccn18-bib" data-toggle="collapse">Bib</button>
-				<button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="">PDF</a></button>
-				<button type="button" class="btn btn-danger btn-xs"><a class="conf" target="_blank" href=" ">Slides</a></button>
+				<button type="button" class="btn btn-success btn-xs" data-target="#uno-abs" data-toggle="collapse">Abstract</button>
+				<button type="button" class="btn btn-info btn-xs" data-target="#uno-bib" data-toggle="collapse">Bib</button>
+				<button type="button" class="btn btn-danger btn-xs"><a class="conf" target="_blank" href="">Slides</a></button>
 				<div id="icccn18-abs" class="collapse">
 					<p class="info" align="justify">
-					
+					Multimedia services evolved explosively in recent years to provide not only higher resolution and frame rate but also richer experience of immersion and interactivity, which empowers a plethora of modern applications such as panoramic and emerging volumetric videos. The ensuing challenge lies in a predicament from the perspective of streaming process, i.e., the increasing demand for video quality and delay by users, and the fast-growing transmission resource overhead required by current media forms. Existing works mainly treat videos as discrete and explicit frames, and based on this, a series of optimization strategies, such as super-resolution, have been established, However, the current methods are high-cost, bulky, and compute-intensive. In this paper, We propose Uno, the first implicit streaming design, which delivers neural networks rather than explicit frames. It is able to: (1) better support the overall streaming pipeline (storage, upload, and download) and address the recent challenges of immersive multimedia, (2) overcome the limitations of existing neural-based techniques in the explicit scheme and integrate them seamlessly, and (3) outperform traditional methods in cost and functionality and demonstrates unique solutions to emerging multimedia challenges. We further give an in-depth research agenda and discuss the open issues, limitations, and opportunities for the proposed research roadmap. We envision that Uno will be the foundation for future multimedia transport.
 				 </p>
 			 </div>
 			 <div id="icccn18-bib" class="collapse">
@@ -299,7 +303,7 @@
 				</p>
 				<button type="button" class="btn btn-success btn-xs" data-target="#icccn18-abs" data-toggle="collapse">Abstract</button>
 				<button type="button" class="btn btn-info btn-xs" data-target="#icccn18-bib" data-toggle="collapse">Bib</button>
-				<button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="">PDF</a></button>
+				<button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://dl.acm.org/doi/pdf/10.1145/3587819.3592551">PDF</a></button>
 				<button type="button" class="btn btn-danger btn-xs"><a class="conf" target="_blank" href=" ">Slides</a></button>
 				<div id="icccn18-abs" class="collapse">
 					<p class="info" align="justify">
@@ -327,7 +331,7 @@
 				</p>
 				<button type="button" class="btn btn-success btn-xs" data-target="#icccn18-abs" data-toggle="collapse">Abstract</button>
 				<button type="button" class="btn btn-info btn-xs" data-target="#icccn18-bib" data-toggle="collapse">Bib</button>
-				<button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="">PDF</a></button>
+				<button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://dl.acm.org/doi/pdf/10.1145/3609395.3610593">PDF</a></button>
 				<button type="button" class="btn btn-danger btn-xs"><a class="conf" target="_blank" href=" ">Slides</a></button>
 				<div id="icccn18-abs" class="collapse">
 					<p class="info" align="justify">
@@ -385,7 +389,7 @@
 				</p>
 				<button type="button" class="btn btn-success btn-xs" data-target="#icccn18-abs" data-toggle="collapse">Abstract</button>
 				<button type="button" class="btn btn-info btn-xs" data-target="#icccn18-bib" data-toggle="collapse">Bib</button>
-				<button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="">PDF</a></button>
+				<button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://dl.acm.org/doi/pdf/10.1145/3503161.3548200">PDF</a></button>
 				<button type="button" class="btn btn-danger btn-xs"><a class="conf" target="_blank" href=" ">Slides</a></button>
 				<div id="icccn18-abs" class="collapse">
 					<p class="info" align="justify">
@@ -411,7 +415,7 @@
 				</p>
 				<button type="button" class="btn btn-success btn-xs" data-target="#icccn18-abs" data-toggle="collapse">Abstract</button>
 				<button type="button" class="btn btn-info btn-xs" data-target="#icccn18-bib" data-toggle="collapse">Bib</button>
-				<button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="">PDF</a></button>
+				<button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10090453">PDF</a></button>
 				<button type="button" class="btn btn-danger btn-xs"><a class="conf" target="_blank" href=" ">Slides</a></button>
 				<div id="icccn18-abs" class="collapse">
 					<p class="info" align="justify">
