@@ -15,6 +15,10 @@ p {
     font-size: 14pt;
 }
 
+strong {
+    font-size: 12pt;
+}
+
 .navbar .nav > li > a, .navbar .nav > li > a:first-letter,
 .navbar .nav > li.current-menu-item > a, 
 .navbar .nav > li.current-menu-ancestor > a {                    
@@ -29,6 +33,7 @@ font-size:      14pt;
 
 .container {
 	background-color: white;
+	width:1050px;
 }
 .container3 {
 }
@@ -44,6 +49,22 @@ font-size:      14pt;
 h4 {
     margin-bottom: 10px;
 }
+
+td {
+    margin-bottom: 0px;
+	padding: 0px;
+}
+
+p.author {
+    margin-bottom: 0px;
+	padding: 0px;
+}
+
+tr {
+    margin-bottom: 0px;
+	padding: 0px;
+}
+
 
 body {
     /* Margin bottom by footer height */
