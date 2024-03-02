@@ -20,6 +20,39 @@
     }	
 </style>
 
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		showSelected();
+
+		document.getElementById('show-selected').addEventListener('click', function(e) {
+			e.preventDefault();
+			showSelected();
+		});
+
+		document.getElementById('show-all').addEventListener('click', function(e) {
+			e.preventDefault();
+			showAll();
+		});
+
+		function showSelected() {
+			document.querySelectorAll('.module').forEach(function(module) {
+				if (module.classList.contains('selected')) {
+					module.classList.remove('hidden');
+				} else {
+					module.classList.add('hidden');
+				}
+			});
+		}
+
+		function showAll() {
+			document.querySelectorAll('.module').forEach(function(module) {
+				module.classList.remove('hidden');
+			});
+		}
+	});
+
+</script>
+
 
 <body data-new-gr-c-s-check-loaded="14.1027.0" data-gr-ext-installed="">
 
@@ -598,40 +631,6 @@ countup(2015, 9, 14);
 
 <script src="./jquery-2.1.4.min.js.download"></script>
 <script src="./bootstrap.min.js.download"></script>
-
-<script>
-	document.addEventListener("DOMContentLoaded", function() {
-		// 默认显示选中的模块
-		showSelected();
-
-		document.getElementById('show-selected').addEventListener('click', function(e) {
-			e.preventDefault();
-			showSelected();
-		});
-
-		document.getElementById('show-all').addEventListener('click', function(e) {
-			e.preventDefault();
-			showAll();
-		});
-
-		function showSelected() {
-			document.querySelectorAll('.module').forEach(function(module) {
-				if (module.classList.contains('selected')) {
-					module.classList.remove('hidden');
-				} else {
-					module.classList.add('hidden');
-				}
-			});
-		}
-
-		function showAll() {
-			document.querySelectorAll('.module').forEach(function(module) {
-				module.classList.remove('hidden');
-			});
-		}
-	});
-
-</script>
 
 
 </body></html>
